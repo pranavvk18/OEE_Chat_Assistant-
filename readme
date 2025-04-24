@@ -1,0 +1,45 @@
+# 📊 OEE Chat Assistant – GenAI-Powered OEE Query System
+
+An interactive GenAI web application that allows users to calculate and query the **Original Equipment Efficiency (OEE)** of packaging devices used in a biscuit manufacturing facility. Built with a conversational interface similar to ChatGPT, this system processes user queries, extracts structured filters, and computes OEE from IoT sensor data using Google Gemini API and Python.
+
+---
+
+## 🚀 Features
+
+- ✅ Conversational UI inspired by ChatGPT
+- 🧠 Natural language understanding with **Google Gemini API**
+- 📈 Calculates OEE from real-time IoT `.csv`/`.xlsx` data
+- 🔍 Filters based on:
+  - Device ID
+  - Location
+  - Month
+  - Year
+- ⚙️ Flask backend for handling queries
+- 📊 Uses Pandas for data filtering and OEE computation
+
+---
+
+## 💡 Project Architecture
+
+1. **User Input**: Enters a query in natural language via web UI.
+2. **Frontend**: HTML, CSS & JS-based chat interface.
+3. **Backend (Flask)**: Sends query to Gemini API.
+4. **Gemini API**: Extracts relevant filters (Device ID, Location, Month, Year).
+5. **Pandas**: Filters IoT data (.csv/.xlsx).
+6. **Calculation Module**: Computes and returns OEE result.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer         | Tools Used                              |
+|--------------|------------------------------------------|
+| Frontend     | HTML, CSS, JavaScript                    |
+| Backend      | Python, Flask                            |
+| AI Model     | Google Gemini 1.5 (via `google.generativeai`) |
+| Data Handling| Pandas, CSV/Excel                        |
+
+---
+
+## 📁 File Structure
+
